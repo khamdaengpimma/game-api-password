@@ -6,6 +6,7 @@ exports.password = (req, res) => {
   if (pw.hasOwnProperty(pass)) {
     const level = pw[pass];
     res.send(`${level}`);
+    console.log(level)
   } else {
     res.send("NO!");
   }
